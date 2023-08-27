@@ -1,5 +1,5 @@
 import os
-from utils.api_conn import APIConnection
+from utils.api_conn import WeatherAPIConn
 from daily_forecast import parse_daily_forecast, write_daily_forecast_to_csv
 from hourly_forecast import parse_hourly_forecast,write_hourly_forecast_to_csv
 import logging
@@ -30,11 +30,11 @@ def main():
     try:
         logger.info('Program started')
         # Create an instance of the APIConnection class
-        api_conn = APIConnection()
+        api_conn = WeatherAPIConn()
 
         # Retrieve daily forecast data from the API
-        daily_data_dict = api_conn.getDailyForecast()
-        hourly_data_dict = api_conn.getHourlyForecast()
+        daily_data_dict = api_conn.get_daily_forecast()
+        hourly_data_dict = api_conn.get_hourly_forecast()
 
         # Parse the daily forecast data
         parsed_daily_data = parse_daily_forecast(daily_data_dict)
