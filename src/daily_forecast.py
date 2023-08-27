@@ -5,7 +5,7 @@ import logging
 
 logger = logging.getLogger(__name__)
 
-def parse_daily_forecast(daily_forecast_dict) -> dict:
+def parse_daily_forecast(daily_forecast_dict: dict) -> dict:
     """
     Parses the daily forecast data from a dictionary and returns a parsed version.
 
@@ -63,7 +63,7 @@ def parse_daily_forecast(daily_forecast_dict) -> dict:
     except Exception as e:
         logger.exception('Error parsing daily forecast.')
         raise e
-def write_daily_forecast_to_csv(data, data_filepath) -> None:
+def write_daily_forecast_to_csv(data: dict, data_filepath) -> None:
     """
     Write daily forecast data to a CSV file.
 

@@ -29,18 +29,18 @@ def main():
     logger = logging.getLogger(__name__)
     try:
         logger.info('Program started')
-        # Create an instance of the APIConnection class
+        # Create an instance of the Weather API connection
         api_conn = WeatherAPIConn()
 
-        # Retrieve daily forecast data from the API
+        # Retrieve daily and hourly forecast data from the API
         daily_data_dict = api_conn.get_daily_forecast()
         hourly_data_dict = api_conn.get_hourly_forecast()
 
-        # Parse the daily forecast data
+        # Parse the daily and hourly forecast data
         parsed_daily_data = parse_daily_forecast(daily_data_dict)
         parsed_hourly_data = parse_hourly_forecast(hourly_data_dict)
 
-        # Save parsed daily forecast data to a CSV file
+        # Save parsed daily and hourly forecast data to a CSV file
         write_daily_forecast_to_csv(parsed_daily_data, DATA_DIR)
         write_hourly_forecast_to_csv(parsed_hourly_data, DATA_DIR)
         
