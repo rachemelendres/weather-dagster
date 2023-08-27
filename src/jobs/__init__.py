@@ -17,6 +17,6 @@ hourly_forecast_job = define_asset_job(name="hourly_forecast_job",
 api_client= AssetSelection.groups('api')
 
 
-api_job = define_asset_job(name="api_job",
-    selection=hourly_forecast_asset
+api_client_job = define_asset_job(name="api_client_job",
+    selection=api_client
 )

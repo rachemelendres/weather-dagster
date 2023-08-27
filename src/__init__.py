@@ -1,13 +1,14 @@
 
 from dagster import Definitions
 from dagster import load_assets_from_modules
-from src.assets import forecast_dag
+from .assets import forecast_dag
 from src.resources.weather_resource import WeatherAPIConn
+from .jobs import daily_forecast_job, hourly_forecast_job, api_client_job
+from .schedules import api_client_schedule, daily_forecast_schedule, hourly_forecast_schedule
 import os
 import requests
 import json
 forecast_assets = load_assets_from_modules([forecast_dag])
-API_URL = os.getenv('API_URL')
-API_KEY = os.getenv('API_KEY')
-
-defs = Definitions(assets=[*forecast_assets])
+all_jobs = [daily_forecast_job, hourly_forecast_job, api_client_job]
+all_schedules = [api_client_schedule, daily_forecast_schedule, hourly_forecast_schedule]
+defs = Definitions(assets=[*forecast_assets], jobs=all_jobs, schedules=all_schedules)
