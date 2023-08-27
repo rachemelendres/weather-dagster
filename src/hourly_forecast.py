@@ -17,7 +17,7 @@ def parse_hourly_forecast(hourly_forecast_dict: dict) -> dict:
 
     """  
     try:
-        logger.info('Parsing daily forecast...')
+        logger.info('Parsing hourly forecast...')
         # hourly_forecasts = hourly_forecast_dict.get('HourlyForecasts', [])
 
         headers = [
