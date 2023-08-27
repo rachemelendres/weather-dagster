@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "weather-dagster"
+version = "0.1.0"
+description = ""
+authors = ["rachemelendres <rache.melendres@indebted.co>"]
+readme = "README.md"
+packages = [{include = "weather_dagster"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+dagster = "^1.4.7"
+dagit = "^1.4.7"
+pandas = "^2.0.3"
+python-dotenv = "^1.0.0"
+pytest = "^7.4.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

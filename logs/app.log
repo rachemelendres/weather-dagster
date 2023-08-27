@@ -1,0 +1,42 @@
+2023-08-21 19:58:17,411 - INFO - __main__ - Program started
+2023-08-21 19:58:17,412 - INFO - utils.api_conn - Getting daily forecast...
+2023-08-21 19:58:17,890 - INFO - utils.api_conn - Daily forecast retrieved.
+2023-08-21 19:58:17,890 - INFO - daily_forecast - Parsing daily forecast...
+2023-08-21 19:58:17,891 - INFO - daily_forecast - Daily forecast parsed.
+2023-08-21 19:58:17,891 - INFO - daily_forecast - Writing daily forecast data to CSV file...
+2023-08-21 19:58:17,892 - INFO - daily_forecast - Daily forecast data written to CSV file.
+2023-08-21 19:58:17,892 - INFO - __main__ - Program completed
+2023-08-26 23:50:58,507 - INFO - __main__ - Program started
+2023-08-26 23:50:58,507 - INFO - utils.api_conn - Getting daily forecast...
+2023-08-26 23:50:59,221 - INFO - utils.api_conn - Daily forecast retrieved.
+2023-08-26 23:50:59,222 - INFO - daily_forecast - Parsing daily forecast...
+2023-08-26 23:50:59,222 - ERROR - __main__ - An error occurred while attempting to start the program.
+Traceback (most recent call last):
+  File "/Users/rachemelendres/Documents/personal-projects/weather-etl/weather-dagster/src/main.py", line 37, in main
+    parsed_daily_data = parse_daily_forecast(daily_data_dict)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rachemelendres/Documents/personal-projects/weather-etl/weather-dagster/src/daily_forecast.py", line 59, in parse_daily_forecast
+    parsed_daily_forecast_data['Night Precipitation Type'].append(forecast['Night']['PrecipitationType'])
+                                                                  ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'PrecipitationType'
+2023-08-26 23:52:17,749 - INFO - __main__ - Program started
+2023-08-26 23:52:17,750 - INFO - utils.api_conn - Getting daily forecast...
+2023-08-26 23:52:19,260 - INFO - utils.api_conn - Daily forecast retrieved.
+2023-08-26 23:52:19,261 - INFO - daily_forecast - Parsing daily forecast...
+2023-08-26 23:52:19,261 - ERROR - __main__ - An error occurred while attempting to start the program.
+Traceback (most recent call last):
+  File "/Users/rachemelendres/Documents/personal-projects/weather-etl/weather-dagster/src/main.py", line 37, in main
+    parsed_daily_data = parse_daily_forecast(daily_data_dict)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rachemelendres/Documents/personal-projects/weather-etl/weather-dagster/src/daily_forecast.py", line 59, in parse_daily_forecast
+    parsed_daily_forecast_data['Night Precipitation Type'].append(forecast['Night']['PrecipitationType'])
+                                                                  ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'PrecipitationType'
+2023-08-26 23:59:08,477 - INFO - __main__ - Program started
+2023-08-26 23:59:08,478 - INFO - utils.api_conn - Getting daily forecast...
+2023-08-26 23:59:09,957 - INFO - utils.api_conn - Daily forecast retrieved.
+2023-08-26 23:59:09,958 - INFO - daily_forecast - Parsing daily forecast...
+2023-08-26 23:59:09,958 - INFO - daily_forecast - Daily forecast parsed.
+2023-08-26 23:59:09,958 - INFO - daily_forecast - Writing daily forecast data to CSV file...
+2023-08-26 23:59:09,960 - INFO - daily_forecast - Daily forecast data written to CSV file.
+2023-08-26 23:59:09,960 - INFO - __main__ - Program completed

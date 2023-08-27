@@ -1,0 +1,17 @@
+2023-08-27 00:42:51,450 - INFO - __main__ - Program started
+2023-08-27 00:42:51,450 - INFO - utils.api_conn - Getting daily forecast...
+2023-08-27 00:42:53,374 - INFO - utils.api_conn - Daily forecast retrieved.
+2023-08-27 00:42:53,375 - INFO - utils.api_conn - Getting hourly forecast...
+2023-08-27 00:42:53,708 - INFO - utils.api_conn - Hourly forecast retrieved.
+2023-08-27 00:42:53,708 - INFO - daily_forecast - Parsing daily forecast...
+2023-08-27 00:42:53,708 - INFO - daily_forecast - Daily forecast parsed.
+2023-08-27 00:42:53,708 - INFO - hourly_forecast - Parsing daily forecast...
+2023-08-27 00:42:53,708 - ERROR - __main__ - An error occurred while attempting to start the program.
+Traceback (most recent call last):
+  File "/Users/rachemelendres/Documents/personal-projects/weather-etl/weather-dagster/src/main.py", line 41, in main
+    parsed_hourly_data = parse_hourly_forecast(hourly_data_dict)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rachemelendres/Documents/personal-projects/weather-etl/weather-dagster/src/hourly_forecast.py", line 20, in parse_hourly_forecast
+    hourly_forecasts = hourly_forecast_dict.get('HourlyForecasts', [])
+                       ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'

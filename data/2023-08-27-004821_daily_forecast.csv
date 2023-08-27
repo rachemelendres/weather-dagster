@@ -1,0 +1,13 @@
+DateTime,EpochDateTime,WeatherIcon,IconPhrase,HasPrecipitation,PrecipitationType,PrecipitationIntensity,IsDaylight,Temperature.Value,Temperature.Unit,Temperature.UnitType
+2023-08-27T01:00:00+08:00,1693069200,7,Cloudy,False,,,False,81.0,F,18
+2023-08-27T02:00:00+08:00,1693072800,7,Cloudy,False,,,False,81.0,F,18
+2023-08-27T03:00:00+08:00,1693076400,7,Cloudy,False,,,False,81.0,F,18
+2023-08-27T04:00:00+08:00,1693080000,7,Cloudy,False,,,False,81.0,F,18
+2023-08-27T05:00:00+08:00,1693083600,7,Cloudy,False,,,False,80.0,F,18
+2023-08-27T06:00:00+08:00,1693087200,7,Cloudy,False,,,True,81.0,F,18
+2023-08-27T07:00:00+08:00,1693090800,15,Thunderstorms,True,Rain,Moderate,True,82.0,F,18
+2023-08-27T08:00:00+08:00,1693094400,7,Cloudy,False,,,True,82.0,F,18
+2023-08-27T09:00:00+08:00,1693098000,7,Cloudy,False,,,True,84.0,F,18
+2023-08-27T10:00:00+08:00,1693101600,7,Cloudy,False,,,True,84.0,F,18
+2023-08-27T11:00:00+08:00,1693105200,15,Thunderstorms,True,Rain,Moderate,True,85.0,F,18
+2023-08-27T12:00:00+08:00,1693108800,7,Cloudy,False,,,True,87.0,F,18
