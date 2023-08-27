@@ -5,6 +5,7 @@ from hourly_forecast import parse_hourly_forecast,write_hourly_forecast_to_csv
 import logging
 import sys
 import datetime
+from dagster import asset
 
 DATA_DIR = os.path.join(os.getcwd(), 'data')
 
@@ -20,6 +21,7 @@ def setup_logging():
             logging.StreamHandler()
         ]
     )
+
 
 
 
