@@ -7,6 +7,7 @@ import sys
 import datetime
 from dagster import asset, op, AssetIn, OpExecutionContext
 from src.resources.weather_resource import WeatherAPIConn
+from typing import Any
 
 
 
@@ -23,14 +24,15 @@ def setup_logging():
             logging.StreamHandler()
         ]
     )
+setup_logging()
+logger = logging.getLogger(__name__)
 
 @asset(description='Initialize API connection',
        group_name='api')
 def init_api_conn():
-    setup_logging()
-    logger = logging.getLogger(__name__)
+  
     api_conn = WeatherAPIConn()
-    
+    logger.info('API connection initialized.')
     return api_conn
 
 @asset(group_name='daily_forecast',
@@ -38,6 +40,7 @@ def init_api_conn():
        ins={'api_conn': AssetIn('init_api_conn')})
 def get_daily_forecast_data(api_conn) -> dict:
     daily_data_dict = api_conn.get_daily_forecast()
+    logger.info('Daily forecast data retrieved.')
     return daily_data_dict
 
 
@@ -47,6 +50,7 @@ def get_daily_forecast_data(api_conn) -> dict:
         )
 def parse_daily_forecast_data(daily_data_dict) -> dict:
     parsed_daily_data = parse_daily_forecast(daily_data_dict)
+    logger.info('Daily forecast data parsed.')
     return parsed_daily_data
 
 @asset(group_name='daily_forecast',
@@ -55,12 +59,14 @@ def parse_daily_forecast_data(daily_data_dict) -> dict:
 def write_daily_forecast_data(parsed_daily_data) -> None:
     DATA_DIR = os.path.join(os.getcwd(), 'data')
     write_daily_forecast_to_csv(parsed_daily_data, DATA_DIR)
+    logger.info('Daily forecast data written to CSV.')
     
 @asset(group_name='hourly_forecast',
        description='Get hourly forecast data',
        ins={'api_conn': AssetIn('init_api_conn')})
-def get_hourly_forecast_data(api_conn) -> dict:
+def get_hourly_forecast_data(api_conn) -> Any:
     hourly_data_dict = api_conn.get_hourly_forecast()
+    logger.info('Hourly forecast data retrieved.')
     return hourly_data_dict
 
 
@@ -68,8 +74,9 @@ def get_hourly_forecast_data(api_conn) -> dict:
        description='Parse hourly forecast data',
         ins={'hourly_data_dict': AssetIn('get_hourly_forecast_data')}
         )
-def parse_hourly_forecast_data(hourly_data_dict) -> dict:
+def parse_hourly_forecast_data(hourly_data_dict) -> Any:
     parsed_hourly_data = parse_hourly_forecast(hourly_data_dict)
+    logger.info('Hourly forecast data parsed.')
     return parsed_hourly_data
 
 @asset(group_name='hourly_forecast',
@@ -78,5 +85,6 @@ def parse_hourly_forecast_data(hourly_data_dict) -> dict:
 def write_hourly_forecast_data(parsed_hourly_data) -> None:
     DATA_DIR = os.path.join(os.getcwd(), 'data')
     write_hourly_forecast_to_csv(parsed_hourly_data, DATA_DIR)
+    logger.info('Hourly forecast data written to CSV.')
 
 

@@ -1,10 +1,10 @@
 
 from dagster import Definitions
 from dagster import load_assets_from_modules
-from .assets import forecast_dag
+from src.assets import forecast_dag
 from src.resources.weather_resource import WeatherAPIConn
-from .jobs import daily_forecast_job, hourly_forecast_job, api_client_job
-from .schedules import api_client_schedule, daily_forecast_schedule, hourly_forecast_schedule
+from src.jobs import daily_forecast_job, hourly_forecast_job, api_client_job
+from src.schedules import api_client_schedule, daily_forecast_schedule, hourly_forecast_schedule
 import os
 import requests
 import json

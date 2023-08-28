@@ -26,7 +26,7 @@ class WeatherAPIConn:
             logger.info('Getting daily forecast...')
             url = f'{self.apiurl[0]}/daily/5day/{self.location[0]}/'
             response = requests.get(url, params=self.params)
-            response.raise_for_status()
+            # response.raise_for_status()
             logger.info('Daily forecast retrieved.')
             return response.json()
         except requests.exceptions.RequestException as e:
@@ -46,7 +46,7 @@ class WeatherAPIConn:
             logger.info('Getting hourly forecast...')
             url = f'{self.apiurl[0]}/hourly/12hour/{self.location[0]}/'
             response = requests.get(url, params=self.params)
-            response.raise_for_status()
+            # response.raise_for_status()
             logger.info('Hourly forecast retrieved.')
             return response.json()
         except requests.exceptions.RequestException as e:
