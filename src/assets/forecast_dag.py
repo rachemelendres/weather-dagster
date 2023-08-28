@@ -1,7 +1,7 @@
 import os
 from src.utils.api_conn import WeatherAPIConn
-from src.daily_forecast import parse_daily_forecast, write_daily_forecast_to_csv
-from src.hourly_forecast import parse_hourly_forecast,write_hourly_forecast_to_csv
+from src.etl_raw.daily_forecast import parse_daily_forecast, write_daily_forecast_to_csv
+from src.etl_raw.hourly_forecast import parse_hourly_forecast,write_hourly_forecast_to_csv
 import logging
 import sys
 import datetime
