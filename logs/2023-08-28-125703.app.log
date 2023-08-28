@@ -1,0 +1,26 @@
+2023-08-28 12:57:03,362 - INFO - alembic.runtime.migration - Context impl SQLiteImpl.
+2023-08-28 12:57:03,362 - INFO - alembic.runtime.migration - Will assume non-transactional DDL.
+2023-08-28 12:57:03,375 - INFO - alembic.runtime.migration - Context impl SQLiteImpl.
+2023-08-28 12:57:03,375 - INFO - alembic.runtime.migration - Will assume non-transactional DDL.
+2023-08-28 12:57:03,384 - INFO - alembic.runtime.migration - Context impl SQLiteImpl.
+2023-08-28 12:57:03,384 - INFO - alembic.runtime.migration - Will assume non-transactional DDL.
+2023-08-28 12:57:03,385 - INFO - alembic.runtime.migration - Running stamp_revision  -> 5771160a95ad
+2023-08-28 12:57:03,396 - INFO - alembic.runtime.migration - Context impl SQLiteImpl.
+2023-08-28 12:57:03,396 - INFO - alembic.runtime.migration - Will assume non-transactional DDL.
+2023-08-28 12:57:03,408 - INFO - alembic.runtime.migration - Running stamp_revision  -> 5771160a95ad
+2023-08-28 12:57:03,417 - INFO - alembic.runtime.migration - Context impl SQLiteImpl.
+2023-08-28 12:57:03,417 - INFO - alembic.runtime.migration - Will assume non-transactional DDL.
+2023-08-28 12:57:03,433 - INFO - alembic.runtime.migration - Context impl SQLiteImpl.
+2023-08-28 12:57:03,433 - INFO - alembic.runtime.migration - Will assume non-transactional DDL.
+2023-08-28 12:57:03,445 - INFO - alembic.runtime.migration - Context impl SQLiteImpl.
+2023-08-28 12:57:03,445 - INFO - alembic.runtime.migration - Will assume non-transactional DDL.
+2023-08-28 12:57:03,446 - INFO - alembic.runtime.migration - Running stamp_revision  -> 5771160a95ad
+2023-08-28 12:57:03,461 - INFO - alembic.runtime.migration - Context impl SQLiteImpl.
+2023-08-28 12:57:03,461 - INFO - alembic.runtime.migration - Will assume non-transactional DDL.
+2023-08-28 12:57:03,468 - INFO - src.daily_forecast - Parsing daily forecast...
+2023-08-28 12:57:03,468 - INFO - src.daily_forecast - Daily forecast parsed.
+2023-08-28 12:57:03,468 - INFO - src.assets.forecast_dag - Daily forecast data parsed.
+2023-08-28 12:57:03,473 - INFO - alembic.runtime.migration - Running stamp_revision  -> 5771160a95ad
+2023-08-28 12:57:03,507 - INFO - src.hourly_forecast - Parsing hourly forecast...
+2023-08-28 12:57:03,508 - INFO - src.hourly_forecast - Hourly forecast parsed.
+2023-08-28 12:57:03,508 - INFO - src.assets.forecast_dag - Hourly forecast data parsed.

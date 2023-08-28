@@ -1,0 +1,26 @@
+2023-08-28 12:57:04,188 - INFO - alembic.runtime.migration - Context impl SQLiteImpl.
+2023-08-28 12:57:04,189 - INFO - alembic.runtime.migration - Will assume non-transactional DDL.
+2023-08-28 12:57:04,201 - INFO - alembic.runtime.migration - Context impl SQLiteImpl.
+2023-08-28 12:57:04,201 - INFO - alembic.runtime.migration - Will assume non-transactional DDL.
+2023-08-28 12:57:04,213 - INFO - alembic.runtime.migration - Running stamp_revision  -> 5771160a95ad
+2023-08-28 12:57:04,246 - INFO - alembic.runtime.migration - Context impl SQLiteImpl.
+2023-08-28 12:57:04,246 - INFO - alembic.runtime.migration - Will assume non-transactional DDL.
+2023-08-28 12:57:04,246 - INFO - alembic.runtime.migration - Context impl SQLiteImpl.
+2023-08-28 12:57:04,247 - INFO - alembic.runtime.migration - Will assume non-transactional DDL.
+2023-08-28 12:57:04,260 - INFO - alembic.runtime.migration - Context impl SQLiteImpl.
+2023-08-28 12:57:04,260 - INFO - alembic.runtime.migration - Will assume non-transactional DDL.
+2023-08-28 12:57:04,261 - INFO - alembic.runtime.migration - Context impl SQLiteImpl.
+2023-08-28 12:57:04,261 - INFO - alembic.runtime.migration - Will assume non-transactional DDL.
+2023-08-28 12:57:04,273 - INFO - alembic.runtime.migration - Running stamp_revision  -> 5771160a95ad
+2023-08-28 12:57:04,275 - INFO - alembic.runtime.migration - Running stamp_revision  -> 5771160a95ad
+2023-08-28 12:57:04,303 - INFO - src.daily_forecast - Writing daily forecast data to CSV file...
+2023-08-28 12:57:04,303 - INFO - src.daily_forecast - Daily forecast data written to CSV file.
+2023-08-28 12:57:04,303 - INFO - src.assets.forecast_dag - Daily forecast data written to CSV.
+2023-08-28 12:57:04,317 - INFO - alembic.runtime.migration - Context impl SQLiteImpl.
+2023-08-28 12:57:04,318 - INFO - alembic.runtime.migration - Will assume non-transactional DDL.
+2023-08-28 12:57:04,343 - INFO - alembic.runtime.migration - Context impl SQLiteImpl.
+2023-08-28 12:57:04,343 - INFO - alembic.runtime.migration - Will assume non-transactional DDL.
+2023-08-28 12:57:04,354 - INFO - alembic.runtime.migration - Running stamp_revision  -> 5771160a95ad
+2023-08-28 12:57:04,381 - INFO - src.hourly_forecast - Writing hourly forecast data to CSV file...
+2023-08-28 12:57:04,382 - INFO - src.hourly_forecast - Hourly forecast data written to CSV file.
+2023-08-28 12:57:04,382 - INFO - src.assets.forecast_dag - Hourly forecast data written to CSV.

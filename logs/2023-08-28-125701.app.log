@@ -1,0 +1,26 @@
+2023-08-28 12:57:01,053 - INFO - alembic.runtime.migration - Context impl SQLiteImpl.
+2023-08-28 12:57:01,053 - INFO - alembic.runtime.migration - Will assume non-transactional DDL.
+2023-08-28 12:57:01,066 - INFO - alembic.runtime.migration - Context impl SQLiteImpl.
+2023-08-28 12:57:01,066 - INFO - alembic.runtime.migration - Will assume non-transactional DDL.
+2023-08-28 12:57:01,077 - INFO - alembic.runtime.migration - Running stamp_revision  -> 5771160a95ad
+2023-08-28 12:57:01,081 - INFO - alembic.runtime.migration - Context impl SQLiteImpl.
+2023-08-28 12:57:01,082 - INFO - alembic.runtime.migration - Will assume non-transactional DDL.
+2023-08-28 12:57:01,095 - INFO - alembic.runtime.migration - Context impl SQLiteImpl.
+2023-08-28 12:57:01,095 - INFO - alembic.runtime.migration - Will assume non-transactional DDL.
+2023-08-28 12:57:01,106 - INFO - alembic.runtime.migration - Context impl SQLiteImpl.
+2023-08-28 12:57:01,106 - INFO - alembic.runtime.migration - Will assume non-transactional DDL.
+2023-08-28 12:57:01,109 - INFO - alembic.runtime.migration - Running stamp_revision  -> 5771160a95ad
+2023-08-28 12:57:01,122 - INFO - alembic.runtime.migration - Context impl SQLiteImpl.
+2023-08-28 12:57:01,122 - INFO - alembic.runtime.migration - Will assume non-transactional DDL.
+2023-08-28 12:57:01,133 - INFO - alembic.runtime.migration - Running stamp_revision  -> 5771160a95ad
+2023-08-28 12:57:01,140 - INFO - alembic.runtime.migration - Context impl SQLiteImpl.
+2023-08-28 12:57:01,140 - INFO - alembic.runtime.migration - Will assume non-transactional DDL.
+2023-08-28 12:57:01,164 - INFO - alembic.runtime.migration - Context impl SQLiteImpl.
+2023-08-28 12:57:01,164 - INFO - alembic.runtime.migration - Will assume non-transactional DDL.
+2023-08-28 12:57:01,165 - INFO - src.resources.weather_resource - Getting daily forecast...
+2023-08-28 12:57:01,179 - INFO - alembic.runtime.migration - Running stamp_revision  -> 5771160a95ad
+2023-08-28 12:57:01,211 - INFO - src.resources.weather_resource - Getting hourly forecast...
+2023-08-28 12:57:02,626 - INFO - src.resources.weather_resource - Daily forecast retrieved.
+2023-08-28 12:57:02,628 - INFO - src.assets.forecast_dag - Daily forecast data retrieved.
+2023-08-28 12:57:02,634 - INFO - src.resources.weather_resource - Hourly forecast retrieved.
+2023-08-28 12:57:02,635 - INFO - src.assets.forecast_dag - Hourly forecast data retrieved.

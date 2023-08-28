@@ -1,0 +1,13 @@
+2023-08-28 12:46:29,303 - INFO - alembic.runtime.migration - Context impl SQLiteImpl.
+2023-08-28 12:46:29,303 - INFO - alembic.runtime.migration - Will assume non-transactional DDL.
+2023-08-28 12:46:29,314 - INFO - alembic.runtime.migration - Context impl SQLiteImpl.
+2023-08-28 12:46:29,314 - INFO - alembic.runtime.migration - Will assume non-transactional DDL.
+2023-08-28 12:46:29,324 - INFO - alembic.runtime.migration - Running stamp_revision  -> 5771160a95ad
+2023-08-28 12:46:29,353 - INFO - alembic.runtime.migration - Context impl SQLiteImpl.
+2023-08-28 12:46:29,353 - INFO - alembic.runtime.migration - Will assume non-transactional DDL.
+2023-08-28 12:46:29,368 - INFO - alembic.runtime.migration - Context impl SQLiteImpl.
+2023-08-28 12:46:29,368 - INFO - alembic.runtime.migration - Will assume non-transactional DDL.
+2023-08-28 12:46:29,377 - INFO - alembic.runtime.migration - Running stamp_revision  -> 5771160a95ad
+2023-08-28 12:46:29,399 - INFO - src.hourly_forecast - Writing hourly forecast data to CSV file...
+2023-08-28 12:46:29,399 - INFO - src.hourly_forecast - Hourly forecast data written to CSV file.
+2023-08-28 12:46:29,399 - INFO - src.assets.forecast_dag - Hourly forecast data written to CSV.

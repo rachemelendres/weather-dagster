@@ -1,0 +1,6 @@
+Date,Min Temperature,Max Temperature,Day Icon Phrase,Day Has Precipitation,Day Precipitation Type,Day Precipitation Intensity,Night Icon Phrase,Night Has Precipitation,Night Precipitation Type,Night Precipitation Intensity
+2023-08-28T07:00:00+08:00,78.0,86.0,Thunderstorms,True,Rain,Moderate,Showers,True,Rain,Moderate
+2023-08-29T07:00:00+08:00,78.0,88.0,Showers,True,Rain,Light,Showers,True,Rain,Light
+2023-08-30T07:00:00+08:00,77.0,83.0,Thunderstorms,True,Rain,Heavy,Thunderstorms,True,Rain,Heavy
+2023-08-31T07:00:00+08:00,78.0,85.0,Thunderstorms,True,Rain,Moderate,Thunderstorms,True,Rain,Moderate
+2023-09-01T07:00:00+08:00,79.0,85.0,Rain,True,Rain,Moderate,Showers,True,Rain,Moderate
